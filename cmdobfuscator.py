@@ -52,12 +52,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-        string = input("Command: ")
-        if string == "":
-            break
-            
-        result = builder(string)
-        print(result)
-
-if __name__ == '__main__':
-    main()
