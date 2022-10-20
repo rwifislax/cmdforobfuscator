@@ -1,14 +1,15 @@
 # CMD command obfuscator
 
 import random
+import string
 
 def random_words():
-    alphabet = "abcdefghijklmnopqrstuvwxyz0123456789"
+    alphanumeric = string.ascii_lowercase + string.digits
     random_word = ""
     n = random.randint(5,10)
     for i in range(n):
         random_number = random.randint(0,35)
-        random_word = random_word + alphabet[random_number]
+        random_word = random_word + alphanumeric[random_number]
 
     return random_word
 
