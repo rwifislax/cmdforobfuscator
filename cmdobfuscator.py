@@ -36,7 +36,7 @@ def builder(string):
     var2 = random_words()
     
     #build cmd one liner
-    cmd = 'cmd /V /C "set ' + var1 + '=' + shuffled_string + '&&for %A in (' + numbers_list + ') do set ' + var2 + '=!' + var2 + '!!' + var1 + ':~%A,1!&&if %A==' + str(random_number) + ' call %' + var2 + ':~-' + str(string_length) + '%"'
+    cmd = 'cmd /V /C \'set ' + var1 + '=' + shuffled_string + '&&for %A in (' + numbers_list + ') do set ' + var2 + '=!' + var2 + '!!' + var1 + ':~%A,1!&&if %A==' + str(random_number) + ' call %' + var2 + ':~-' + str(string_length) + '%\''
     return cmd
 
 def main():
