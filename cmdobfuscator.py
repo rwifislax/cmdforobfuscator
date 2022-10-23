@@ -37,7 +37,10 @@ def builder(string):
     
     #build cmd one liner
     cmd = 'cmd /V /C \'set ' + var1 + '=' + shuffled_string + '&&for %A in (' + numbers_list + ') do set ' + var2 + '=!' + var2 + '!!' + var1 + ':~%A,1!&&if %A==' + str(random_number) + ' call %' + var2 + ':~-' + str(string_length) + '%\''
-    return cmd
+    if len(cmd) > 8191:
+        print("Invalid character size. CMD has a max character limit of 8191")
+    else:
+        return cmd
 
 def main():
     
