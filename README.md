@@ -1,4 +1,4 @@
 # CMD Commands FORobfuscator
 Python script to automate the generation of obfuscated CMD commands by a FORobfuscation technique.
 
-The idea to build this came after carefully reading a linked in post by Dahvid Schloss. Special Thanks.
+the FORobfuscation technique was learned by Dahvid Schloss through a linked in post. Special Thanks.
